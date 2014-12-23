@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:id="@+id/nbaitem"  
+        android:title="NBA News"/>  
+    <item  android:id="@+id/techitem"  
+        android:title="Tech News"/>  
+    <item  android:id="@+id/usitem"  
+        android:title="US News"/> 
+</menu>

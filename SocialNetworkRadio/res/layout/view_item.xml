@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="10dp">
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.facebook.widget.ProfilePictureView
+            android:id="@+id/profilePicture"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+             />
+
+        <TableLayout 
+            android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:collapseColumns="2"
+    	    android:stretchColumns="1">
+    	    
+            <!-- First  and second row: show user name and publish time -->
+            <TableRow 
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content">
+    	        <TextView 
+    	            android:id="@+id/nickName"
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:textSize="18sp"
+    	            android:textColor="#000000"
+    	            android:text="username"/>
+    	    </TableRow>
+    	    <TableRow 
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content">
+    	        <TextView 
+    	            android:id="@+id/publish"
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:layout_gravity="right"
+    	            android:textSize="12sp"
+    	            android:textColor="#000000"
+    	            android:text="2013-05-10"/>   
+    	    </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <TextView 
+	    android:id="@+id/nf_story"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#444444"
+        android:textSize="12sp"
+        android:text="news feed story here..."/>
+	<TextView
+        android:id="@+id/nf_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:text="news feed content here..." />
+	<TextView
+        android:id="@+id/nf_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#123477"
+        android:textSize="12sp"
+        android:text="news feed content here..." />
+</LinearLayout>
