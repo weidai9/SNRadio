@@ -19,10 +19,10 @@ public class NewsDataHelper {
     	this.context = context;
     	CognitoCachingCredentialsProvider cognitoProvider = new CognitoCachingCredentialsProvider(
     		    context, // get the context for the current activity
-    		    "256659443981",
-    		    "us-east-1:1ca265c4-22e5-42a4-a933-f9011fc2df90",
-    		    "arn:aws:iam::256659443981:role/Cognito_SNSRadioUnauth_DefaultRole",
-    		    "arn:aws:iam::256659443981:role/Cognito_SNSRadioAuth_DefaultRole",
+    		    "change me here",
+    		    "change me here",
+    		    "change me here",
+    		    "change me here",
     		    Regions.US_EAST_1
     	);
     	ddb = new AmazonDynamoDBClient(cognitoProvider);
